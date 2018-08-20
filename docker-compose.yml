@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: python -m news_counter.server --conf news_counter/conf.yaml --port 8000
+    ports:
+      - "8000:8000"

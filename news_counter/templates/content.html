@@ -1,0 +1,17 @@
+<h3>Proccessed {{ processed_items }} news</h3>
+<table class='table'>
+    <thead>
+        <tr>
+            <th>Text</th>
+            <th>Mentions count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for title, count in counters.items() %}
+        <tr>
+            <td>{{ title }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
